@@ -1,0 +1,38 @@
+/**
+ * Custom CSS for portfolio site.
+ * Keep overrides minimal — Docusaurus defaults are solid.
+ */
+
+/* Primary brand color — professional blue, works well for cloud/DevOps */
+:root {
+  --ifm-color-primary: #1a73e8;
+  --ifm-color-primary-dark: #1565d8;
+  --ifm-color-primary-darker: #125ec9;
+  --ifm-color-primary-darkest: #0e4da5;
+  --ifm-color-primary-light: #3584ec;
+  --ifm-color-primary-lighter: #4a91ee;
+  --ifm-color-primary-lightest: #72aaf3;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+[data-theme='dark'] {
+  --ifm-color-primary: #4a91ee;
+  --ifm-color-primary-dark: #2a7deb;
+  --ifm-color-primary-darker: #1a73e8;
+  --ifm-color-primary-darkest: #1565d8;
+  --ifm-color-primary-light: #6aa3f1;
+  --ifm-color-primary-lighter: #7aaef3;
+  --ifm-color-primary-lightest: #a2c8f7;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+/* Slightly tighter content width for readability */
+.markdown {
+  max-width: 800px;
+}
+
+/* Clean code blocks */
+pre {
+  border-radius: 6px;
+}
