@@ -1,6 +1,26 @@
 .hero {
-  padding: 4rem 0;
+  padding: 5rem 0;
   text-align: center;
+  background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 50%, #1565d8 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Subtle animated gradient shift */
+.hero::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255,255,255,0.05) 0%, transparent 70%);
+  animation: heroGlow 8s ease-in-out infinite alternate;
+}
+
+@keyframes heroGlow {
+  0% { transform: translate(0, 0); }
+  100% { transform: translate(30px, 20px); }
 }
 
 .heroSummary {
@@ -18,6 +38,26 @@
   gap: 0.5rem;
 }
 
+/* Typing animation */
+.typingText {
+  display: inline-block;
+  border-right: 3px solid rgba(255, 255, 255, 0.75);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(50) 0.5s forwards, blink 0.75s step-end infinite;
+  width: 0;
+  max-width: 100%;
+}
+
+@keyframes typing {
+  to { width: 100%; }
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+/* Sections */
 .section {
   padding: 3rem 0;
 }
@@ -37,17 +77,54 @@
   gap: 1.5rem;
 }
 
+/* Cards with hover lift + fade-in on scroll */
 .card {
   border: 1px solid var(--ifm-color-emphasis-200);
   border-radius: 8px;
   padding: 1.5rem;
-  transition: box-shadow 0.2s;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.5s ease forwards;
 }
 
 .card:hover {
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
 }
 
 .card h3 {
   margin-top: 0;
+}
+
+/* Staggered fade-in for cards */
+.card:nth-child(1) { animation-delay: 0.1s; }
+.card:nth-child(2) { animation-delay: 0.2s; }
+.card:nth-child(3) { animation-delay: 0.3s; }
+.card:nth-child(4) { animation-delay: 0.4s; }
+.card:nth-child(5) { animation-delay: 0.5s; }
+.card:nth-child(6) { animation-delay: 0.6s; }
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* CTA section fade-in */
+.ctaSection {
+  opacity: 0;
+  animation: fadeIn 0.8s ease 0.3s forwards;
+}
+
+@keyframes fadeIn {
+  to { opacity: 1; }
+}
+
+/* Skill icon emoji */
+.skillIcon {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  display: block;
 }
