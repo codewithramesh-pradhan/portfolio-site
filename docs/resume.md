@@ -93,4 +93,4 @@ Aspiring Cloud Engineer with hands-on experience in AWS, Infrastructure as Code,
 
 ---
 
-📄 [Download Resume (PDF)](/img/Ramesh-Pradhan-Resume.pdf)
+📄 [Download Resume (PDF)](/img/Resume-Ramesh-Pradhan.pdf)
