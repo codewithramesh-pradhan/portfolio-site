@@ -19,6 +19,13 @@ Aspiring Cloud Engineer with hands-on experience in AWS, Infrastructure as Code,
 
 ## Experience
 
+### Flower Power Pty Ltd, Erskine Park — IT Support Specialist
+*Multi-Site Retail/Manufacturing Distribution · Dec 2025 – Present*
+
+- Provided L1–L2 support for 100+ users across ERP/POS/warehouse systems (AS400 inventory/settlement-like workflows), troubleshooting performance, data, and configuration issues to minimize downtime
+- Managed endpoint security (CrowdStrike/Defender), O365/Azure AD onboarding, and vendor coordination — skills transferable to high-volume trading/execution environments
+- Contributed to cyber reviews and Essential Eight compliance, documenting processes for SME oversight
+
 ### Soley Studios, Manchester (UK) — Cloud Engineer
 *June 2025 – Present*
 
