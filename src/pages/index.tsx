@@ -40,7 +40,7 @@ function HeroSection() {
     <header className={clsx('hero hero--primary', styles.hero)}>
       <div className="container">
         <h1 className="hero__title">{siteConfig.title}</h1>
-        <p className={clsx('hero__subtitle', styles.typingText)}>{siteConfig.tagline}</p>
+        <p className="hero__subtitle">{siteConfig.tagline}</p>
         <p className={styles.heroSummary}>
           I design, build, and maintain cloud infrastructure on AWS. I work with containers,
           automate everything I can, and document what I learn. This portfolio is a living
