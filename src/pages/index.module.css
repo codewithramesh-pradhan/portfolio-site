@@ -6,7 +6,7 @@
   overflow: hidden;
 }
 
-/* Subtle animated gradient shift */
+/* Animated gradient glow — pointer-events: none so it doesn't block clicks */
 .hero::before {
   content: '';
   position: absolute;
@@ -14,44 +14,87 @@
   left: -50%;
   width: 200%;
   height: 200%;
-  background: radial-gradient(circle, rgba(255,255,255,0.05) 0%, transparent 70%);
-  animation: heroGlow 8s ease-in-out infinite alternate;
+  background: radial-gradient(circle, rgba(255,255,255,0.08) 0%, transparent 60%);
+  animation: heroGlow 6s ease-in-out infinite alternate;
+  pointer-events: none;
 }
 
 @keyframes heroGlow {
-  0% { transform: translate(0, 0); }
-  100% { transform: translate(30px, 20px); }
+  0% { transform: translate(0, 0) scale(1); }
+  100% { transform: translate(40px, 30px) scale(1.05); }
+}
+
+/* Hero content needs to sit above the ::before overlay */
+.hero > * {
+  position: relative;
+  z-index: 1;
 }
 
 .heroSummary {
   max-width: 640px;
-  margin: 1rem auto;
+  margin: 1.2rem auto;
   font-size: 1.1rem;
-  opacity: 0.9;
+  opacity: 0;
+  animation: fadeInUp 0.8s ease 0.2s forwards;
 }
 
 .heroButtons {
-  margin-top: 1.5rem;
+  margin-top: 2rem;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  gap: 1rem;
+  opacity: 0;
+  animation: fadeInUp 0.8s ease 0.4s forwards;
+}
+
+/* Hero button styles — big, bold, clickable */
+.heroBtn {
+  display: inline-flex;
+  align-items: center;
   gap: 0.5rem;
+  padding: 0.9rem 2rem;
+  border-radius: 8px;
+  font-size: 1.05rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+  cursor: pointer;
 }
 
-/* Typing animation - applied only to inline elements, not block layout */
-.typingText {
-  display: inline-block;
-  border-right: 3px solid rgba(255, 255, 255, 0.75);
-  animation: blink 0.75s step-end infinite;
+.heroBtnPrimary {
+  composes: heroBtn;
+  background: #fff;
+  color: #1a73e8;
+  border: 2px solid #fff;
 }
 
-@keyframes blink {
-  50% { border-color: transparent; }
+.heroBtnPrimary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+  background: #e8f0fe;
+  color: #0d47a1;
+  text-decoration: none;
+}
+
+.heroBtnSecondary {
+  composes: heroBtn;
+  background: transparent;
+  color: #fff;
+  border: 2px solid rgba(255, 255, 255, 0.8);
+}
+
+.heroBtnSecondary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  text-decoration: none;
 }
 
 /* Sections */
 .section {
-  padding: 3rem 0;
+  padding: 3.5rem 0;
 }
 
 .sectionAlt {
@@ -61,6 +104,8 @@
 .sectionTitle {
   text-align: center;
   margin-bottom: 2rem;
+  opacity: 0;
+  animation: fadeInUp 0.6s ease forwards;
 }
 
 .grid {
@@ -69,24 +114,35 @@
   gap: 1.5rem;
 }
 
-/* Cards with hover lift + fade-in on scroll */
+/* Cards with hover lift + staggered fade-in */
 .card {
   border: 1px solid var(--ifm-color-emphasis-200);
-  border-radius: 8px;
+  border-radius: 12px;
   padding: 1.5rem;
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  background: var(--ifm-background-color);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
   opacity: 0;
   transform: translateY(20px);
   animation: fadeInUp 0.5s ease forwards;
 }
 
 .card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  transform: translateY(-6px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+  border-color: var(--ifm-color-primary);
 }
 
 .card h3 {
   margin-top: 0;
+}
+
+.card a {
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.card a:hover {
+  color: var(--ifm-color-primary-dark);
 }
 
 /* Staggered fade-in for cards */
@@ -104,7 +160,7 @@
   }
 }
 
-/* CTA section fade-in */
+/* CTA section */
 .ctaSection {
   opacity: 0;
   animation: fadeIn 0.8s ease 0.3s forwards;
@@ -116,7 +172,12 @@
 
 /* Skill icon emoji */
 .skillIcon {
-  font-size: 1.8rem;
+  font-size: 2.2rem;
   margin-bottom: 0.5rem;
   display: block;
+  transition: transform 0.3s ease;
+}
+
+.card:hover .skillIcon {
+  transform: scale(1.2);
 }

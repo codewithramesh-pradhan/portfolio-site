@@ -47,12 +47,11 @@ function HeroSection() {
           record of my projects, skills, and technical thinking.
         </p>
         <div className={styles.heroButtons}>
-          <Link className="button button--secondary button--lg" to="/docs/projects/tech-health-cdk">
-            View Projects
+          <Link className={styles.heroBtnPrimary} to="/docs/projects/tech-health-cdk">
+            🚀 View Projects
           </Link>
-          <Link className="button button--outline button--lg" to="/docs/about"
-                style={{marginLeft: '1rem', color: 'white', borderColor: 'white'}}>
-            About Me
+          <Link className={styles.heroBtnSecondary} to="/docs/about">
+            👤 About Me
           </Link>
         </div>
       </div>
@@ -107,11 +106,11 @@ function CTASection() {
         <p>Browse my project writeups, troubleshooting docs, and blog to see how I approach real infrastructure problems.</p>
         <div className={styles.heroButtons}>
           <Link className="button button--primary button--lg" to="/docs/about">
-            Explore Portfolio
+            📂 Explore Portfolio
           </Link>
           <Link className="button button--outline button--primary button--lg" to="/docs/resume"
-                style={{marginLeft: '1rem'}}>
-            View Resume
+                style={{marginLeft: '0.5rem'}}>
+            📄 View Resume
           </Link>
         </div>
       </div>
