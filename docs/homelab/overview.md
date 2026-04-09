@@ -35,18 +35,7 @@ My homelab is a personal infrastructure environment where I experiment with tech
 
 ## Network Diagram
 
-```
-Internet
-   ↓
-Router/Firewall (pfSense)
-   ↓
-Managed Switch (VLANs)
-   ├── VLAN 10: Management
-   ├── VLAN 20: Kubernetes nodes
-   └── VLAN 30: IoT / isolated devices
-```
-
-*Update this diagram to reflect your actual network topology.*
+![Homelab Network Architecture](/img/homelab-network.png)
 
 ## What I've Learned
 
