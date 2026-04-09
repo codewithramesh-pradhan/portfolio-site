@@ -52,9 +52,8 @@ title: Skills
 
 ## Certifications
 
-<!-- Update this section as you earn certifications -->
-- AWS Cloud Practitioner *(or your current certs)*
-- *Add certifications here as you earn them*
+- **[AWS Academy Graduate — Cloud Architecting](https://www.credly.com/badges/a3ff9288-df94-499d-9bdc-a35eaa47a837/linked_in_profile)** — Covers multi-tier architectures, high availability, automation, and security on AWS
+- **[AWS Academy Graduate — Cloud Foundations](https://www.credly.com/badges/bff324d8-db60-4fd6-91a7-6d1fcdc69e0c/linked_in_profile)** — Core AWS services, cloud concepts, pricing, security, and architecture fundamentals
 
 ---
 
