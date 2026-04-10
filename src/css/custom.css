@@ -27,6 +27,22 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
+/* Hide heading anchor links until hover */
+.markdown h1 .hash-link,
+.markdown h2 .hash-link,
+.markdown h3 .hash-link,
+.markdown h4 .hash-link {
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.markdown h1:hover .hash-link,
+.markdown h2:hover .hash-link,
+.markdown h3:hover .hash-link,
+.markdown h4:hover .hash-link {
+  opacity: 1;
+}
+
 /* Slightly tighter content width for readability */
 .markdown {
   max-width: 800px;
