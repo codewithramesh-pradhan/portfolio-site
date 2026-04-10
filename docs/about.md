@@ -32,4 +32,6 @@ I'm actively pursuing roles in Cloud Engineering, DevOps, Infrastructure Enginee
 
 ---
 
-📧 [pradhanmesh88@gmail.com](mailto:pradhanmesh88@gmail.com) · 🔗 [GitHub](https://github.com/codewithramesh-pradhan) · 🔗 [LinkedIn](https://www.linkedin.com/in/ramesh-pradhan-b99707276)
+📧 Want to work together? Reach me at [pradhanmesh88@gmail.com](mailto:pradhanmesh88@gmail.com) or connect on [LinkedIn](https://www.linkedin.com/in/ramesh-pradhan-b99707276).
+
+🔗 [GitHub](https://github.com/codewithramesh-pradhan) · 🔗 [Medium](https://medium.com/@pradhanmesh88)
