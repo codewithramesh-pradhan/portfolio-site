@@ -30,12 +30,49 @@
   z-index: 1;
 }
 
-.heroSummary {
-  max-width: 640px;
-  margin: 1.2rem auto;
+/* Profile photo — uncomment in index.tsx when ready */
+.profilePhoto {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 3px solid rgba(255, 255, 255, 0.8);
+  margin-bottom: 1rem;
+  object-fit: cover;
+}
+
+/* Highlight / differentiator section */
+.highlight {
+  max-width: 720px;
+  margin: 0 auto;
+  text-align: center;
   font-size: 1.1rem;
-  opacity: 0;
-  animation: fadeInUp 0.8s ease 0.2s forwards;
+  line-height: 1.7;
+}
+
+.statsRow {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.statNumber {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--ifm-color-primary);
+}
+
+.statLabel {
+  font-size: 0.85rem;
+  color: var(--ifm-color-emphasis-600);
+  margin-top: 0.25rem;
 }
 
 .heroButtons {

@@ -4,32 +4,23 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import styles from './index.module.css';
 
-const skills = [
-  {icon: '☁️', title: 'AWS', description: 'EC2, S3, RDS, CloudFront, VPC, IAM, CloudFormation, Lambda'},
-  {icon: '🐳', title: 'Containers', description: 'Docker, Kubernetes (k3s), Helm, Docker Compose'},
-  {icon: '🐧', title: 'Linux', description: 'Ubuntu, Amazon Linux, systemd, Bash scripting'},
-  {icon: '🌐', title: 'Networking', description: 'TCP/IP, DNS, subnetting, VPN, firewalls, load balancing'},
-  {icon: '🔄', title: 'CI/CD', description: 'GitHub Actions, automated deployments, IaC pipelines'},
-  {icon: '📊', title: 'Monitoring', description: 'CloudWatch, Prometheus, Grafana, alerting'},
-];
-
 const projects = [
   {
     emoji: '🏥',
     title: 'Tech Health CDK',
-    description: 'HIPAA-compliant healthcare API with Cognito auth, WAF protection, DynamoDB, Lambda, and CloudWatch monitoring.',
+    description: 'HIPAA-compliant healthcare API — 7 AWS services, 5 HIPAA safeguards, deployed in under 10 minutes via CDK with zero manual console steps.',
     link: '/docs/projects/tech-health-cdk',
   },
   {
     emoji: '✈️',
     title: 'TravelEase Infrastructure CDK',
-    description: 'Serverless travel inquiry system with API Gateway, Lambda, DynamoDB, SES notifications, and SQS dead letter queues.',
+    description: 'Serverless travel inquiry system handling 50 req/min with rate limiting, honeypot spam protection, and SQS dead letter queues for zero message loss.',
     link: '/docs/projects/travelease-infrastructure-cdk',
   },
   {
     emoji: '🔐',
     title: 'AWS IAM CloudFormation',
-    description: 'Enterprise IAM with RBAC, MFA enforcement, CloudTrail audit logging, and GitHub Actions CI/CD pipeline.',
+    description: '8,900+ lines of CloudFormation managing 10 IAM users across 4 RBAC groups — with MFA enforcement, Checkov scanning, and CloudTrail audit logging.',
     link: '/docs/projects/aws-iam-cloudformation',
   },
 ];
@@ -39,13 +30,10 @@ function HeroSection() {
   return (
     <header className={clsx('hero hero--primary', styles.hero)}>
       <div className="container">
-        <h1 className="hero__title">{siteConfig.title}</h1>
+        {/* TODO: Add your photo at static/img/profile.jpg and uncomment below */}
+        {/* <img src="/portfolio-site/img/profile.jpg" alt="Ramesh Pradhan" className={styles.profilePhoto} /> */}
+        <h1 className="hero__title">Ramesh Pradhan</h1>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <p className={styles.heroSummary}>
-          I design, build, and maintain cloud infrastructure on AWS. I work with containers,
-          automate everything I can, and document what I learn. This portfolio is a living
-          record of my projects, skills, and technical thinking.
-        </p>
         <div className={styles.heroButtons}>
           <Link className={styles.heroBtnPrimary} to="/docs/projects/tech-health-cdk">
             🚀 View Projects
@@ -59,19 +47,35 @@ function HeroSection() {
   );
 }
 
-function SkillsSection() {
+function HighlightSection() {
   return (
     <section className={styles.section}>
       <div className="container">
-        <h2 className={styles.sectionTitle}>Core Skills</h2>
-        <div className={styles.grid}>
-          {skills.map((skill) => (
-            <div key={skill.title} className={styles.card}>
-              <span className={styles.skillIcon}>{skill.icon}</span>
-              <h3>{skill.title}</h3>
-              <p>{skill.description}</p>
+        <div className={styles.highlight}>
+          <p>
+            I've deployed <strong>3 production-grade AWS projects</strong> entirely through Infrastructure as Code —
+            no console clicks. My work covers HIPAA-compliant APIs, serverless event systems, and enterprise IAM
+            with CI/CD pipelines. Every project includes architecture diagrams, security controls, and documentation
+            written for the next engineer, not just for me.
+          </p>
+          <div className={styles.statsRow}>
+            <div className={styles.stat}>
+              <span className={styles.statNumber}>3</span>
+              <span className={styles.statLabel}>IaC Projects Deployed</span>
             </div>
-          ))}
+            <div className={styles.stat}>
+              <span className={styles.statNumber}>12+</span>
+              <span className={styles.statLabel}>AWS Services Used</span>
+            </div>
+            <div className={styles.stat}>
+              <span className={styles.statNumber}>8,900+</span>
+              <span className={styles.statLabel}>Lines of CloudFormation</span>
+            </div>
+            <div className={styles.stat}>
+              <span className={styles.statNumber}>0</span>
+              <span className={styles.statLabel}>Console-Click Deployments</span>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -124,7 +128,7 @@ export default function Home(): JSX.Element {
     <Layout title="Home" description={siteConfig.tagline}>
       <HeroSection />
       <main>
-        <SkillsSection />
+        <HighlightSection />
         <ProjectsSection />
         <CTASection />
       </main>

@@ -100,6 +100,17 @@ Manually creating IAM users, roles, and policies through the console leads to in
 - ✅ CIS AWS Foundations — Security configuration benchmarks
 - ✅ AWS Well-Architected — Security pillar alignment
 
+## Key Metrics
+
+| Metric | Value |
+|---|---|
+| **CloudFormation Code** | 8,915+ lines of production YAML |
+| **IAM Users Managed** | 10 users across 4 RBAC groups |
+| **Security Scanning** | Checkov in CI — catches misconfigs before merge |
+| **Password Policy** | 14-char min, 90-day rotation, 12-password reuse prevention |
+| **Audit Coverage** | Multi-region CloudTrail with log file validation |
+| **Compliance Alignment** | SOC 2, ISO 27001, CIS AWS Foundations |
+
 ## Key Takeaways
 
 - **Group-based access** is more maintainable than per-user policies — users inherit permissions from their group

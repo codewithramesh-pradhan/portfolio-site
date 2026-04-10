@@ -20,14 +20,14 @@ Aspiring Cloud Engineer with hands-on experience in AWS, Infrastructure as Code,
 ## Experience
 
 ### Flower Power Pty Ltd, Erskine Park — IT Support Specialist
-*Multi-Site Retail/Manufacturing Distribution · Dec 2025 – Present*
+*Full-time · Multi-Site Retail/Manufacturing Distribution · Dec 2025 – Present*
 
 - Provided L1–L2 support for 100+ users across ERP/POS/warehouse systems (AS400 inventory/settlement-like workflows), troubleshooting performance, data, and configuration issues to minimize downtime
 - Managed endpoint security (CrowdStrike/Defender), O365/Azure AD onboarding, and vendor coordination — skills transferable to high-volume trading/execution environments
 - Contributed to cyber reviews and Essential Eight compliance, documenting processes for SME oversight
 
 ### Soley Studios, Manchester (UK) — Cloud Engineer
-*June 2025 – Present*
+*Contract (Remote) · June 2025 – Present*
 
 - Designed and maintained secure AWS cloud infrastructure leveraging EC2, S3, VPC, Lambda, IAM, and serverless architectures
 - Utilized IaC with Terraform, AWS CloudFormation, and AWS CDK for reproducible environment provisioning
@@ -37,7 +37,7 @@ Aspiring Cloud Engineer with hands-on experience in AWS, Infrastructure as Code,
 - Troubleshot and resolved cloud infrastructure issues to maintain high performance and availability
 
 ### Harbour Net IT Solution, Sydney — Cloud Support Technician
-*October 2024 – Present*
+*Part-time · October 2024 – Present*
 
 - Configured, managed, and monitored AWS resources and automated deployments with Terraform/CloudFormation
 - Enhanced system reliability and performance while securing cloud infrastructure

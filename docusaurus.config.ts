@@ -8,7 +8,7 @@ const REPO_NAME = 'portfolio-site'; // GitHub repo name
 
 const config: Config = {
   title: 'Ramesh Pradhan — Cloud & DevOps Engineer',
-  tagline: 'Building reliable infrastructure, one commit at a time.',
+  tagline: 'Cloud Engineer in Sydney — I build secure AWS infrastructure with CDK, automate everything, and document what I learn.',
   favicon: 'img/favicon.ico',
 
   // GitHub Pages deployment config

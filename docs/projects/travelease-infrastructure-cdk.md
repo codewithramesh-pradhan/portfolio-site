@@ -88,6 +88,17 @@ Build a serverless backend for a travel booking platform that handles customer i
 - **IAM Least Privilege:** Minimal required permissions per resource
 - **SES Conditions:** Restricted email sending permissions
 
+## Key Metrics
+
+| Metric | Value |
+|---|---|
+| **API Rate Limit** | 50 requests/min, burst 20 |
+| **AWS Services Used** | 6 (API Gateway, Lambda, DynamoDB, SES, SQS, CloudWatch) |
+| **Spam Protection** | Honeypot field — zero user friction |
+| **Message Reliability** | SQS dead letter queue — zero message loss |
+| **Deployment Time** | ~5 minutes from `cdk deploy` to live API endpoint |
+| **Manual Console Steps** | 0 — fully automated IaC |
+
 ## Key Takeaways
 
 - **API Gateway request validation** catches malformed input before it reaches Lambda — saves compute cost and improves security
