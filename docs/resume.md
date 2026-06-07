@@ -1,93 +1,79 @@
----
-sidebar_position: 99
-title: Resume
----
+Ramesh Pradhan
+Sydney, NSW, Australia  
+LinkedIn: https://www.linkedin.com/in/ramesh-pradhan-b99707276    
+GitHub: https://github.com/codewithramesh-pradhan/
+Email: pradhanmesh88@gmail.com  
+Medium: https://medium.com/@pradhanmesh88
+Portfolio: https://codewithramesh-pradhan.github.io/portfolio-site/
+Phone: 041371689
 
-# Ramesh Pradhan
+Professional Summary
+Hands-on IT Infrastructure & Systems Administrator with 3+ years supporting multi-site environments across Windows Server, Microsoft 365, networking, endpoint management, and cloud platforms. Experienced in Active Directory, Group Policy, Azure AD hybrid sync, Exchange Online, Teams, and SharePoint administration. Proven track record with endpoint management tools (ManageEngine, PDQ Deploy), network infrastructure (firewalls, switches, VPNs), and cybersecurity platforms (CrowdStrike, Essential Eight). Adept at L2/L3 support, documentation, disaster recovery, and working across warehouse and operational environments. Committed to secure, reliable, and scalable IT operations.
 
-**Cloud Engineer** · Sydney, Australia · TAFE NSW
+Core Competencies
+Infrastructure & Systems Administration
+Windows Server 2019 administration, Active Directory, DNS, DHCP, Group Policy (GPO)
+Endpoint management and patch deployment: ManageEngine Endpoint Central, PDQ Deploy
+OS deployment and workstation provisioning; software package creation and deployment
+Backup and disaster recovery: Veeam, Windows Server Backup; business continuity management
+Microsoft 365 & Cloud
+Exchange Online, SharePoint, Teams (including Teams Phone), OneDrive �� user and tenant administration
+Azure AD hybrid sync, Intune compliance, conditional access, M365 lifecycle management
+AWS cloud services (EC2, S3, RDS, Lambda, CloudWatch, VPC); cloud integrations and support
+Networking & Connectivity
+LAN/WAN/VPN configuration and troubleshooting; VLAN segmentation, firewalls (Palo Alto, ACLs)
+Fortinet  switches and wireless access points; multi-site connectivity support
+Routers, switches, site-to-site connectivity, and network performance monitoring
+Cybersecurity & Monitoring
+CrowdStrike EDR, Abnormal Security (email protection), ManageEngine Log360
+Zabbix and CloudWatch/Grafana monitoring; Essential Eight compliance; security event response
+ITIL-based incident management: ServiceNow, OSTicket; SLA management; structured escalation
+Communication & Operational Platforms
+Microsoft Teams Phone system administration
+Amazon Connect contact center platform support
+Warehouse/operational technology: label printers, ERP/POS/AS400 systems
 
-📧 [pradhanmesh88@gmail.com](mailto:pradhanmesh88@gmail.com) · [LinkedIn](https://www.linkedin.com/in/ramesh-pradhan-b99707276) · [GitHub](https://github.com/codewithramesh-pradhan) · [Medium](https://medium.com/@pradhanmesh88)
+Experience
+IT Support Specialist
+Flower Power Pty Ltd (Multi-Site Retail/Manufacturing/Distribution) �� Erskine Park, NSW
+Dec 2025 �C May 2026
+Deliver L1�CL2 support for 100+ users across multiple sites covering ERP, POS, and warehouse systems, including AS400 inventory workflows, minimizing system downtime and disruption to operations.
+Administer endpoint security (CrowdStrike, Microsoft Defender), manage M365/Azure AD user onboarding/offboarding, and coordinate with vendors for hardware and software issues.
+Support warehouse and operational technology including label printers and logistics-related hardware, ensuring reliable uptime for business-critical operations.
+Contribute to cybersecurity reviews, Essential Eight compliance assessments, and process documentation to support infrastructure reliability and audit readiness.
 
----
+IT Support Engineer (Systems Admin Duties)
+Harbour Net IT Solution �� Sydney, NSW
+Oct 2024 �C Nov 2025
+Supported 100+ users across 2+ sites; managed ticketing via ServiceNow/osTicket, resolving 90% of issues within SLA using ITIL-aligned workflows and escalation procedures.
+Administered Windows Server 2019, Active Directory, Group Policy, Azure AD hybrid sync, M365 (Exchange Online, SharePoint, Teams), SQL Server, and conditional access with Intune compliance enforcement.
+Configured and maintained network infrastructure: firewalls/ACLs, VLAN segmentation, routers, and switches across multiple sites; monitored and responded to network and security events.
+Deployed and managed endpoints using ManageEngine and PDQ Deploy, including software package creation, OS imaging, and workstation provisioning for new and replacement hardware.
+Administered backup/disaster recovery processes using Veeam and Windows Server Backup; maintained documentation, runbooks, and operational procedures for business continuity.
+Managed vendor relationships for RMM tools (TeamViewer, AnyDesk); ensured SLAs through proactive monitoring and escalations.
 
-## Summary
+Cloud Support Engineer
+Soley Studios �� Remote (UK)
+June 2025 �C December 2025
+Provided production support for AWS-hosted applications (EC2, S3, RDS, Lambda), triaging incidents, resolving performance and data issues, and achieving 99.8% uptime with structured post-incident analysis.
+Monitored system health via CloudWatch/Grafana dashboards, responding to alerts, analyzing logs/metrics, and coordinating with engineering teams on fixes and improvements.
+Supported CI/CD pipelines (GitHub Actions), reducing deployment-related incidents and improving environment reliability.
 
-Aspiring Cloud Engineer with hands-on experience in AWS, Infrastructure as Code, and DevOps automation. Strong background in deploying cloud solutions and developing professional technical documentation.
 
----
 
-## Experience
+Projects
+Healthcare API Platform | https://www.github.com/codewithramesh-pradhan/tech-health-cdk 
+Architected and supported a low-latency API platform (Lambda, API Gateway, DynamoDB) achieving 99.9% uptime through CloudWatch alarms, log analysis, and auto-scaling for 10,000+ concurrent users.
+Conducted simulated incidents, root-cause analysis, and post-mortems; built HIPAA-compliant runbooks and monitoring dashboards.
+Serverless Travel Platform | https://www.github.com/codewithramesh-pradhan/travelease-infra-cdk
+Maintained a high-volume serverless inquiry system (Lambda, SQS, DynamoDB) reducing response times by 87%; implemented dead-letter queues and monitoring alerts for rapid incident response.
 
-### Flower Power Pty Ltd, Erskine Park — IT Support Specialist
-*Full-time · Multi-Site Retail/Manufacturing Distribution · Dec 2025 – Present*
+Education & Certifications
+Diploma of Information Technology (Cloud Architecture & Advanced Networking) | TAFE NSW Meadowbank | 2025
+Designed and secured cloud infrastructure (AWS & Azure); configured advanced networking (routing, switching, virtualisation); implemented Infrastructure as Code for scalable automation.
+Cloud Engineering Certification | Cloud Engineering Academy | 2025
+Designed, deployed, and managed cloud solutions on AWS and Azure; automated deployments with IaC and CI/CD; implemented security, monitoring, and cost optimization best practices.
 
-- Provided L1–L2 support for 100+ users across ERP/POS/warehouse systems (AS400 inventory/settlement-like workflows), troubleshooting performance, data, and configuration issues to minimize downtime
-- Managed endpoint security (CrowdStrike/Defender), O365/Azure AD onboarding, and vendor coordination — skills transferable to high-volume trading/execution environments
-- Contributed to cyber reviews and Essential Eight compliance, documenting processes for SME oversight
 
-### Soley Studios, Manchester (UK) — Cloud Engineer
-*Contract (Remote) · June 2025 – Present*
-
-- Designed and maintained secure AWS cloud infrastructure leveraging EC2, S3, VPC, Lambda, IAM, and serverless architectures
-- Utilized IaC with Terraform, AWS CloudFormation, and AWS CDK for reproducible environment provisioning
-- Developed CI/CD pipelines with GitHub Actions including automated testing, security scanning, and deployment validation
-- Collaborated with security teams to implement IAM best practices and compliance measures; enforced MFA and custom password policies
-- Created architecture diagrams and documentation for planning and delivery
-- Troubleshot and resolved cloud infrastructure issues to maintain high performance and availability
-
-### Harbour Net IT Solution, Sydney — Cloud Support Technician
-*Part-time · October 2024 – Present*
-
-- Configured, managed, and monitored AWS resources and automated deployments with Terraform/CloudFormation
-- Enhanced system reliability and performance while securing cloud infrastructure
-- Troubleshot and documented complex networking/cloud incidents for rapid issue resolution
-
----
-
-## Education
-
-### TAFE NSW, Meadowbank — Diploma of Information Technology
-*Cloud Architecture and Advanced Networking · June 2025*
-
-- Designed, deployed, and managed secure cloud infrastructures on AWS and Azure
-- Applied advanced networking principles to build scalable and resilient cloud environments
-- Integrated network and cloud security strategies across hybrid and multi-cloud environments
-- Gained hands-on experience with DevOps tools, monitoring systems, and incident response workflows
-- Pursued industry-recognized certifications mapped to employer requirements
-
-### Cloud Engineering Academy, Manchester (UK) — Certificate in Cloud Infrastructure
-*June 2024*
-
-- Configured cloud resources, networking, and storage on AWS and Azure
-- Built secure and scalable infrastructure solutions applying best practices for cloud security and automation
-- Collaborated on cloud migration projects using modern DevOps tools and infrastructure-as-code methodologies
-
----
-
-## Technical Skills
-
-| Area | Technologies |
-|---|---|
-| **Cloud** | AWS (EC2, Lambda, S3, IAM, VPC, CloudFront, RDS, Route 53, CloudFormation, CloudWatch) |
-| **IaC** | AWS CDK, CloudFormation, Terraform |
-| **CI/CD** | GitHub Actions |
-| **Languages** | Python, TypeScript, Bash, YAML |
-| **Tools** | Git, AWS CLI, Linux (Ubuntu/WSL), Docker |
-| **Documentation** | Architecture diagrams, runbooks, technical writing |
-
----
-
-## Certifications
-
-- **[AWS Academy Graduate — Cloud Architecting](https://www.credly.com/badges/a3ff9288-df94-499d-9bdc-a35eaa47a837/linked_in_profile)**
-- **[AWS Academy Graduate — Cloud Foundations](https://www.credly.com/badges/bff324d8-db60-4fd6-91a7-6d1fcdc69e0c/linked_in_profile)**
-
----
-
-## Projects
-
-- **[Tech Health CDK](/docs/projects/tech-health-cdk)** — HIPAA-compliant healthcare API with AWS CDK, Cognito, WAF, DynamoDB, KMS, and CloudWatch
-- **[TravelEase Infrastructure CDK](/docs/projects/travelease-infrastructure-cdk)** — Serverless travel inquiry system with API Gateway, Lambda, DynamoDB, SES, and SQS
-- **[AWS IAM CloudFormation](/docs/projects/aws-iam-cloudformation)** — Enterprise IAM with RBAC, MFA enforcement, CloudTrail audit logging, and CI/CD
-
+References
+Available on request.
