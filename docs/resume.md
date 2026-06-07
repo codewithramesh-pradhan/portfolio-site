@@ -76,6 +76,13 @@ Cloud and Infrastructure Engineer with deep hands-on experience designing, deplo
 - Built end-to-end CI/CD pipelines with automated testing, security scanning, and zero-downtime deployments
 - Implemented branch-based deployment strategies with environment promotion gates
 
+### Java Web Application on EC2
+
+[GitHub](https://github.com/codewithramesh-pradhan/nextwork-web-project) · Java · AWS EC2
+
+- Deployed a Java web application on an EC2 instance with full server configuration and networking setup
+- Demonstrated end-to-end cloud hosting: provisioning, security groups, and application deployment
+
 ### Portfolio Site
 
 [GitHub](https://github.com/codewithramesh-pradhan/portfolio-site) · [Live Site](https://codewithramesh-pradhan.github.io/portfolio-site/)
