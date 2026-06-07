@@ -91,6 +91,3 @@ Aspiring Cloud Engineer with hands-on experience in AWS, Infrastructure as Code,
 - **[TravelEase Infrastructure CDK](/docs/projects/travelease-infrastructure-cdk)** — Serverless travel inquiry system with API Gateway, Lambda, DynamoDB, SES, and SQS
 - **[AWS IAM CloudFormation](/docs/projects/aws-iam-cloudformation)** — Enterprise IAM with RBAC, MFA enforcement, CloudTrail audit logging, and CI/CD
 
----
-
-📄 [Download Resume (PDF)](/img/Resume-Ramesh-Pradhan.pdf)
